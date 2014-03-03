@@ -10,14 +10,15 @@ fatal and critical levels will pop a warning message in Nuke and Maya to make su
 user attention was grabbed when needed.
 
 To use:
-    log = getLogger( 'mylogger' )
+    import cgLogging
+    log = cgLogging.getLogger( 'mylogger' )
     log.info( 'log something' )
 
     # Set level to debug
-    log = getLogger( 'mylogger', level=DEBUG )
+    log = cgLogging.getLogger( 'mylogger', level=cgLogging.DEBUG )
     # OR
-    log = getLogger( 'mylogger' )
-    log.setLevel( DEBUG )
+    log = cgLogging.getLogger( 'mylogger' )
+    log.setLevel( cgLogging.DEBUG )
 
     # Alart user:
     try:
