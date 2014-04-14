@@ -15,11 +15,14 @@ To use:
     import cgLogging
     log = cgLogging.getLogger( 'mylogger' )
     log.info( 'log something' )
+    
     # Set level to debug
     log = cgLogging.getLogger( 'mylogger', level=cgLogging.DEBUG )
+    
     # OR
     log = cgLogging.getLogger( 'mylogger' )
     log.setLevel( cgLogging.DEBUG )
+    
     # Alart user:
     try:
         ... do something
