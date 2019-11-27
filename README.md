@@ -11,21 +11,23 @@ user attention was grabbed when needed.
 
 To use:
 
-    # Create logger:
-    import cgLogging
-    log = cgLogging.getLogger( 'mylogger' )
-    log.info( 'log something' )
-    
-    # Set level to debug
-    log = cgLogging.getLogger( 'mylogger', level=cgLogging.DEBUG )
-    
-    # OR
-    log = cgLogging.getLogger( 'mylogger' )
-    log.setLevel( cgLogging.DEBUG )
-    
-    # Alart user:
-    try:
-        ... do something
-    except Exception, error :
-        log.fatal( "pop up this message if we're in nuke or maya" )
-        raise error # re raise the error after we msg the user.
+```python
+# Create logger:
+import cgLogging
+log = cgLogging.getLogger( 'mylogger' )
+log.info( 'log something' )
+
+# Set level to debug
+log = cgLogging.getLogger( 'mylogger', level=cgLogging.DEBUG )
+
+# OR
+log = cgLogging.getLogger( 'mylogger' )
+log.setLevel( cgLogging.DEBUG )
+
+# Alart user:
+try:
+    ... do something
+except Exception, error :
+    log.fatal( "pop up this message if we're in nuke or maya" )
+    raise error # re raise the error after we msg the user.
+```
